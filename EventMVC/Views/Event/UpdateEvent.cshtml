@@ -1,0 +1,121 @@
+﻿@model DAL.Model.Event
+
+@{
+    ViewData["Title"] = "UpdateEvent";
+}
+<style>
+    /* General Styles */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Form Container */
+    .form-container {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    /* Form Title */
+    .form-title {
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Input Fields */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    textarea:focus {
+        border-color: #66afe9;
+        outline: none;
+    }
+
+    /* Button Styles */
+    button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #218838;
+    }
+
+    
+    }
+</style>
+
+<h1>Update the Event</h1>
+
+<h4>Event</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="UpdateEvent">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Location" class="control-label"></label>
+                <input asp-for="Location" class="form-control" />
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="control-label"></label>
+                <input asp-for="Type" class="form-control" />
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Budget" class="control-label"></label>
+                <input asp-for="Budget" class="form-control" />
+                <span asp-validation-for="Budget" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="GetEvents">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

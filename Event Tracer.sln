@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{082D137D-2C40-4736-98BB-F6FF4DF9773D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventMVC", "EventMVC\EventMVC.csproj", "{F02B7C2A-BA1D-4E77-91DC-394FC4400510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventConsole1", "EventConsole1\EventConsole1.csproj", "{84285872-D268-4EB5-B4B8-171AB7979926}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{082D137D-2C40-4736-98BB-F6FF4DF9773D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{082D137D-2C40-4736-98BB-F6FF4DF9773D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{082D137D-2C40-4736-98BB-F6FF4DF9773D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{082D137D-2C40-4736-98BB-F6FF4DF9773D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F02B7C2A-BA1D-4E77-91DC-394FC4400510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02B7C2A-BA1D-4E77-91DC-394FC4400510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02B7C2A-BA1D-4E77-91DC-394FC4400510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02B7C2A-BA1D-4E77-91DC-394FC4400510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84285872-D268-4EB5-B4B8-171AB7979926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84285872-D268-4EB5-B4B8-171AB7979926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84285872-D268-4EB5-B4B8-171AB7979926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84285872-D268-4EB5-B4B8-171AB7979926}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3244A919-9725-4672-BC2A-34FC2E63854B}
+	EndGlobalSection
+EndGlobal
